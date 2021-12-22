@@ -52,9 +52,9 @@ section.section-divider .btn {
 .heading:after {
   content: " ";
   display: block;
-  width: 100px;
+  width: 220px;
   height: 2px;
-  margin: 20px auto 20px;
+  margin: 10px auto 20px;
   background: #202124;
 }
 .img-responsive {
@@ -199,7 +199,7 @@ strong {
 .navbar {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  background: #b3cad8;
+  background: #babcbe;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -213,24 +213,24 @@ strong {
   font-size: 0.8rem;
 }
 .navbar ul.navbar-nav > li > a:not(.navbar-btn):hover {
-  border-top-color: #202124;
+  border-bottom-color: #202124;
   color: #202124;
 }
 @media (min-width: 992px) {
   .navbar ul.navbar-nav > li > a:not(.navbar-btn) {
-    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
     padding: 40px 15px !important;
     color: #fff;
     font-weight: 300;
   }
   .navbar ul.navbar-nav > li > a:not(.navbar-btn):hover {
-    border-top-color: #202124;
+    border-bottom-color: #202124;
     color: #202124;
   }
   .navbar ul.navbar-nav > li.active > a,
   .navbar ul.navbar-nav > li.show > a {
     text-decoration: none !important;
-    border-top-color: #202124;
+    border-bottom-color: #202124;
     color: #202124;
   }
   .navbar ul.navbar-nav > li > a.navbar-btn {
@@ -400,10 +400,9 @@ strong {
   background: #282c37;
   color: #ccc;
   padding: 20px 0;
-  font-size: 0.7875rem;
+  font-size: 0.8rem;
   line-height: 28px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 .footer__copyright p {
@@ -864,7 +863,7 @@ strong {
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 1;
   background: #202124;
 }
 .box-image .name {
@@ -901,7 +900,7 @@ strong {
   padding: 0 20px;
 }
 .box-image:hover .bg {
-  opacity: 0.7;
+  opacity: 1;
 }
 .box-image:hover .name {
   position: absolute;
@@ -999,10 +998,10 @@ strong {
   font-size: 0.9rem;
 }
 .box-image-text.bg-visible .bg {
-  opacity: 0.8;
+  opacity: 0.3;
 }
 .box-image-text:hover .bg {
-  opacity: 0.7;
+  opacity: 0;
 }
 .box-image-text:hover .name {
   position: absolute;
@@ -1072,7 +1071,7 @@ strong {
   margin-left: 10px;
 }
 .job-form-section.job-form-section--compressed {
-  padding: 20px;
+  padding: 50px;
 }
 .job-form-section.job-form-section--compressed .job-main-form {
   margin-bottom: 0;
@@ -1092,6 +1091,10 @@ strong {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.job-listing .row{
+  margin-bottom: 16px;
+}
+
 job-main-form__button .job-listing {
   border: solid 1px #dee2e6;
   border-bottom: none;

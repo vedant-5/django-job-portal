@@ -42,7 +42,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="{% url 'jobs:home' %}" class="navbar-brand">
-                <img src="{% static 'img/logo-small.png' %}" alt="logo" class="d-none d-lg-block">
+                <img src="{% static 'img/logo.svg' %}" alt="logo" class="d-none d-lg-block">
                 <span class="sr-only">Home</span>
             </a>
             <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -58,9 +58,9 @@
                     <li class="nav-item {% if url_name == 'jobs' %}active{% endif %}">
                         <a href="{% url 'jobs:jobs' %}" class="nav-link">Jobs</a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a href="/{{ LANGUAGE_CODE }}/about-us/" class="nav-link">About Us</a>
-                    </li>
+                    </li> {% endcomment %}
                     {% if request.user.is_authenticated and request.user.role == 'employer' %}
                         <li class="nav-item dropdown">
                             <a id="clientZone" href="#" data-toggle="dropdown"
@@ -68,7 +68,7 @@
                                class="nav-link dropdown-toggle has-img mb-3 mb-lg-0 mt-3 mt-lg-0">
                                 <div class="client-menu-image">
                                     <div class="inner">
-                                        <img src="{% static 'img/company-1.png' %}"
+                                        <img src="{% static 'img/profile.webp' %}"
                                              alt="company image"
                                              class="img-fluid">
                                     </div>
@@ -115,7 +115,7 @@
                                class="nav-link dropdown-toggle has-img mb-3 mb-lg-0 mt-3 mt-lg-0">
                                 <div class="client-menu-image">
                                     <div class="inner">
-                                        <img src="{% static 'img/company-1.png' %}"
+                                        <img src="{% static 'img/profile.webp' %}"
                                              alt="company image"
                                              class="img-fluid">
                                     </div>
@@ -166,7 +166,7 @@
                             </a>
                         </li>
                     {% endif %}
-                    {% include "lang_selector.html" %}
+                    
                 </ul>
                 {% endwith %}
             </div>
@@ -195,22 +195,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-md-left text-center">
-                    <p>&copy;{% now "Y" %} django-jobs!</p>
+                    <p>&copy;{% now "Y" %} HireLanes</p>
                 </div>
-                <div class="col-md-8 text-center text-md-right github-buttons">
-                    <a href="https://github.com/manjurulhoque/django-job-portal" target="_blank" rel="noopener">
-                        <img alt="stars" src="https://img.shields.io/github/stars/manjurulhoque/django-job-portal?style=social"/>
-                    </a>
-                    <a href="https://github.com/manjurulhoque/django-job-portal" target="_blank" rel="noopener">
-                        <img alt="forks" src="https://img.shields.io/github/forks/manjurulhoque/django-job-portal?style=social"/>
-                    </a>
-                    <a href="https://github.com/manjurulhoque/django-job-portal/issues" target="_blank" rel="noopener">
-                        <img alt="issues" src="https://img.shields.io/github/issues/manjurulhoque/django-job-portal?style=social"/>
-                    </a>
-                    <a href="https://github.com/manjurulhoque/django-job-portal/#contributors-" target="_blank" rel="noopener">
-                        <img alt="translation" src="https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square"/>
-                    </a>
-                </div>
+            
             </div>
         </div>
     </div>
