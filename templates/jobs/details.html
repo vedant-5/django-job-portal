@@ -66,7 +66,7 @@
                 <div class="col-lg-3">
                     <h4>About {{ job.company_name }}</h4>
                     <p class="job-detail__company-description">{{ job.company_description }}</p>
-                    <p class="job-detail__social social social--outline">
+                    {% comment %} <p class="job-detail__social social social--outline">
                         <a href="{{ job.website }}" data-toggle="tooltip" data-placement="top" title="Website"
                            class="link">
                             <i class="fa fa-link"></i>
@@ -77,7 +77,7 @@
                         <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook" class="facebook">
                             <i class="fa fa-facebook"></i>
                         </a>
-                    </p>
+                    </p> {% endcomment %}
                     <div class="job-detail__apply-top">
                         {% if is_applied %}
                             <input type="button" class="btn btn-outline-white-primary" value="Already applied"/>
