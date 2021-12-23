@@ -24,7 +24,7 @@ Used Tech Stack
 1. Django
 2. Sqlite
 
-### Screenshots
+<!-- ### Screenshots
 
 ## Home page
 <img src="screenshots/one.png" height="800">
@@ -96,4 +96,4 @@ Used Tech Stack
 #### To dump data:
 ``python manage.py dumpdata --format=json --indent 4 app_name > app_name/fixtures/app_name_initial_data.json``
 
-Show your support by 🌟 the project!!
+Show your support by 🌟 the project!! -->
